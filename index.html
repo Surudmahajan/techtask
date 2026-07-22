@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="Swiggy Home">
+                <img src="assets/icons/Group.svg" alt="Swiggy Logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="#" class="nav-link">Swiggy Corporate</a>
+                <a href="#" class="nav-link">Partner with us</a>
+                <a href="#" class="btn btn-outline btn-get-app">
+                    Get the App <span class="arrow-icon">↗</span>
+                </a>
+                <a href="#" class="btn btn-solid btn-signin">Sign in</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <img src="assets/icons/menu.svg" alt="Menu">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <img src="assets/images/Veggies_new.png" alt="" class="hero-img hero-img-left" aria-hidden="true">
+                <img src="assets/images/Sushi_replace.png" alt="" class="hero-img hero-img-right" aria-hidden="true">
+            </div>
+            
+            <div class="container hero-content">
+                <h1 class="hero-title">Order food & groceries. Discover<br>best restaurants. Swiggy it!</h1>
+                
+                <div class="search-container">
+                    <div class="search-input-group location-group">
+                        <img src="assets/icons/location.svg" alt="" class="input-icon">
+                        <input type="text" placeholder="Enter your delivery location" class="search-input" aria-label="Delivery location">
+                        <img src="assets/icons/chevron-down.svg" alt="" class="dropdown-icon">
+                    </div>
+                    <div class="search-input-group query-group">
+                        <input type="text" placeholder="Search for restaurant, item or more" class="search-input" aria-label="Search">
+                        <img src="assets/icons/search.svg" alt="" class="input-icon search-icon">
+                    </div>
+                </div>
+
+                <div class="service-cards">
+                    <a href="#" class="service-card">
+                        <div class="service-card-text">
+                            <h2>FOOD DELIVERY</h2>
+                            <p>FROM RESTAURANTS</p>
+                            <span class="discount-tag">UPTO 60% OFF</span>
+                        </div>
+                        <img src="assets/images/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.png" alt="Food Delivery" class="service-card-img">
+                        <div class="arrow-circle">
+                            <img src="assets/icons/arrow-right-white.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="service-card">
+                        <div class="service-card-text">
+                            <h2>INSTAMART</h2>
+                            <p>INSTANT GROCERY</p>
+                            <span class="discount-tag">UPTO 60% OFF</span>
+                        </div>
+                        <img src="assets/images/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.png" alt="Instamart" class="service-card-img">
+                        <div class="arrow-circle">
+                            <img src="assets/icons/arrow-right-white.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="service-card">
+                        <div class="service-card-text">
+                            <h2>DINEOUT</h2>
+                            <p>EAT OUT & SAVE MORE</p>
+                            <span class="discount-tag">UPTO 50% OFF</span>
+                        </div>
+                        <img src="assets/images/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.png" alt="Dineout" class="service-card-img">
+                        <div class="arrow-circle">
+                            <img src="assets/icons/arrow-right-white.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Food Options Carousel -->
+        <section class="carousel-section container">
+            <div class="section-header">
+                <h2 class="section-title">Order our best food options</h2>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" aria-label="Previous options" data-target="food-carousel" disabled>
+                        <img src="assets/icons/arrow-left.svg" alt="">
+                    </button>
+                    <button class="carousel-btn next" aria-label="Next options" data-target="food-carousel">
+                        <img src="assets/icons/arrow-right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-container" id="food-carousel">
+                <div class="carousel-track round-items">
+                    <!-- Javascript will populate this, but for static representation: -->
+                    <div class="carousel-item round"><img src="assets/images/North Indian.png" alt="North Indian"><p>North Indian</p></div>
+                    <div class="carousel-item round"><img src="assets/images/Desserts.png" alt="Desserts"><p>Desserts</p></div>
+                    <div class="carousel-item round"><img src="assets/images/Chinese.png" alt="Chinese"><p>Chinese</p></div>
+                    <div class="carousel-item round"><img src="assets/images/South Indian.png" alt="South Indian"><p>South Indian</p></div>
+                    <div class="carousel-item round"><img src="assets/images/Burger.png" alt="Burger"><p>Burger</p></div>
+                    <div class="carousel-item round"><img src="assets/images/Biryani.png" alt="Biryani"><p>Biryani</p></div>
+                    <div class="carousel-item round"><img src="assets/images/Pizza.png" alt="Pizza"><p>Pizza</p></div>
+                    <div class="carousel-item round"><img src="assets/images/Ice Cream.png" alt="Ice Cream"><p>Ice Cream</p></div>
+                    <div class="carousel-item round"><img src="assets/images/Cake.png" alt="Cake"><p>Cake</p></div>
+                    <div class="carousel-item round"><img src="assets/images/Rolls.png" alt="Rolls"><p>Rolls</p></div>
+                    <div class="carousel-item round"><img src="assets/images/Shawarma.png" alt="Shawarma"><p>Shawarma</p></div>
+                    <div class="carousel-item round"><img src="assets/images/Noodles.png" alt="Noodles"><p>Noodles</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Groceries on Instamart Carousel -->
+        <section class="carousel-section container mt-large">
+            <div class="section-header">
+                <h2 class="section-title">Shop groceries on Instamart</h2>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" aria-label="Previous groceries" data-target="grocery-carousel" disabled>
+                        <img src="assets/icons/arrow-left.svg" alt="">
+                    </button>
+                    <button class="carousel-btn next" aria-label="Next groceries" data-target="grocery-carousel">
+                        <img src="assets/icons/arrow-right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-container" id="grocery-carousel">
+                <div class="carousel-track rect-items">
+                    <div class="carousel-item rect"><img src="assets/images/012beae1-c31a-4360-9b32-173080b64652_aa07a04e-5f2e-4c00-86f6-297344906f01.png" alt="Fresh Vegetables"><p>Fresh Vegetables</p></div>
+                    <div class="carousel-item rect"><img src="assets/images/097900ca-5d2d-4bb0-8e54-aede1e58dfd8_eab3796c-ac17-48fd-bfc7-6356c6f89783.png" alt="Fresh Fruits"><p>Fresh Fruits</p></div>
+                    <div class="carousel-item rect"><img src="assets/images/1a08f110-17b6-4785-92d4-404825b75f2d_869c1986-d9c1-4d46-b1c3-10c79a052a59.png" alt="Dairy, Bread and Eggs"><p>Dairy, Bread<br>and Eggs</p></div>
+                    <div class="carousel-item rect"><img src="assets/images/1eae2df9-95a5-40e5-a2c0-92bb4893637a_5e1e6c72-dde5-4a12-8bdf-c7cbc4b0644b.png" alt="Rice, Atta and Dals"><p>Rice, Atta and<br>Dals</p></div>
+                    <div class="carousel-item rect"><img src="assets/images/25be4b2d-a9de-495e-a9a4-9a6d6a3d13c0_5f571281-eef0-4820-9982-d8bdd9af91c6.png" alt="Masalas and Dry Fruits"><p>Masalas and<br>Dry Fruits</p></div>
+                    <div class="carousel-item rect"><img src="assets/images/37d399b1-52d2-47ef-bdd8-8951e51819fc_0361a93d-e864-49be-a57d-46c958eb7b56.png" alt="Oils and Ghee"><p>Oils and Ghee</p></div>
+                    <div class="carousel-item rect"><img src="assets/images/4342c814-6ff9-4bbe-a360-95200ad602a0_1905dc17-a04d-4a9e-9a4e-adde9b27f321.png" alt="Munchies"><p>Munchies</p></div>
+                    <div class="carousel-item rect"><img src="assets/images/43e3c412-4ca9-4894-82ba-24b69da80aa6_06c0d2a9-804c-4bf1-8725-7ebd234e144a.png" alt="Sweet Tooth"><p>Sweet Tooth</p></div>
+                    <div class="carousel-item rect"><img src="assets/images/52a66c89-6516-489f-96ac-b15286900648_ebbfd2d1-9b36-4ce3-b08c-7378f1ca6d7d.png" alt="Cold Drinks and Juices"><p>Cold Drinks and<br>Juices</p></div>
+                    <div class="carousel-item rect"><img src="assets/images/5fc3d15a-26b0-41e0-93ab-39ada0f553c2_82e0ff9f-558c-45dd-af3e-fdc16d0aa471.png" alt="Biscuits and Cakes"><p>Biscuits and<br>Cakes</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discover Best Restaurants on Dineout -->
+        <section class="carousel-section container mt-large">
+            <div class="section-header">
+                <h2 class="section-title">Discover best restaurants on Dineout</h2>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" aria-label="Previous restaurants" data-target="restaurant-carousel" disabled>
+                        <img src="assets/icons/arrow-left.svg" alt="">
+                    </button>
+                    <button class="carousel-btn next" aria-label="Next restaurants" data-target="restaurant-carousel">
+                        <img src="assets/icons/arrow-right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-container" id="restaurant-carousel">
+                <div class="carousel-track card-items">
+                    <!-- Restaurant Card 1 -->
+                    <article class="restaurant-card">
+                        <div class="rc-image-wrapper">
+                            <img src="assets/images/64714677-e6b6-41c1-b533-6644d43e55f7_76ef86af-0483-41a5-8387-37901bf4ca6a.png" alt="House of Candy" class="rc-img">
+                            <div class="rc-overlay">
+                                <h3 class="rc-title">House of Candy</h3>
+                                <div class="rc-rating"><span class="star">★</span> 2.3</div>
+                            </div>
+                        </div>
+                        <div class="rc-details">
+                            <div class="rc-row">
+                                <span class="rc-cuisine">Desserts</span>
+                                <span class="rc-price">₹500 for two</span>
+                            </div>
+                            <div class="rc-row">
+                                <span class="rc-location">Seawoods Grand Central Mall, Seawoods...</span>
+                                <span class="rc-distance">1.9 km</span>
+                            </div>
+                            <div class="rc-offers">
+                                <div class="offer-tag primary"><img src="assets/icons/discount.svg" alt=""> Flat 25% off on pre-booking <span class="offer-more">+ 4 more</span></div>
+                                <div class="offer-tag secondary">Up to 10% off with bank offers</div>
+                            </div>
+                            <div class="rc-footer-offer">Get extra ₹50 off using PAYTMUPI</div>
+                        </div>
+                    </article>
+                    
+                    <!-- Restaurant Card 2 -->
+                    <article class="restaurant-card">
+                        <div class="rc-image-wrapper">
+                            <img src="assets/images/657a922d-067a-4e0b-b967-b3e0c7906fa9_485311db-2f22-4193-a05d-963f18a89150.png" alt="Earthen kitchen champaran meat" class="rc-img">
+                            <div class="rc-overlay">
+                                <h3 class="rc-title">Earthen kitchen champara...</h3>
+                                <div class="rc-rating"><span class="star">★</span> 4.4</div>
+                            </div>
+                        </div>
+                        <div class="rc-details">
+                            <div class="rc-row">
+                                <span class="rc-cuisine">North Indian • Bihari</span>
+                                <span class="rc-price">₹300 for two</span>
+                            </div>
+                            <div class="rc-row">
+                                <span class="rc-location">Olive Excel Cooperative Housing Society, ...</span>
+                                <span class="rc-distance">2.2 km</span>
+                            </div>
+                            <div class="rc-offers">
+                                <div class="offer-tag secondary">Up to 10% off with bank offers</div>
+                            </div>
+                            <div class="rc-footer-offer">Get extra ₹50 off using PAYTMUPI</div>
+                        </div>
+                    </article>
+
+                    <!-- Restaurant Card 3 -->
+                    <article class="restaurant-card">
+                        <div class="rc-image-wrapper">
+                            <img src="assets/images/6dea6676-ce07-45e6-b60c-a099c01c5462_6d33297a-5828-48ff-aa2a-c052ae97669e.png" alt="Dadi Ka Khazana" class="rc-img">
+                            <div class="rc-overlay">
+                                <h3 class="rc-title">Dadi Ka Khazana</h3>
+                                <div class="rc-rating"><span class="star">★</span> 4.2</div>
+                            </div>
+                        </div>
+                        <div class="rc-details">
+                            <div class="rc-row">
+                                <span class="rc-cuisine">North Indian • Street Food</span>
+                                <span class="rc-price">₹400 for two</span>
+                            </div>
+                            <div class="rc-row">
+                                <span class="rc-location">Sector 2, Mumbai</span>
+                                <span class="rc-distance">1.7 km</span>
+                            </div>
+                            <div class="rc-offers">
+                                <div class="offer-tag secondary">Up to 10% off with bank offers</div>
+                            </div>
+                            <div class="rc-footer-offer">Get extra ₹50 off using PAYTMUPI</div>
+                        </div>
+                    </article>
+
+                    <!-- Restaurant Card 4 -->
+                    <article class="restaurant-card">
+                        <div class="rc-image-wrapper">
+                            <img src="assets/images/705173ff-7cd9-4d7e-9e5b-3886d81411b9_bb324827-9556-48e4-b8f6-280706478fe2.png" alt="The Waffle Co." class="rc-img">
+                            <div class="rc-overlay">
+                                <h3 class="rc-title">The Waffle Co.</h3>
+                                <div class="rc-rating"><span class="star">★</span> 4.8</div>
+                            </div>
+                        </div>
+                        <div class="rc-details">
+                            <div class="rc-row">
+                                <span class="rc-cuisine">Desserts • Beverages</span>
+                                <span class="rc-price">₹400 for two</span>
+                            </div>
+                            <div class="rc-row">
+                                <span class="rc-location">Kharghar, Mumbai</span>
+                                <span class="rc-distance">9.1 km</span>
+                            </div>
+                            <div class="rc-offers">
+                                <div class="offer-tag primary"><img src="assets/icons/discount.svg" alt=""> Flat 25% off on pre-booking <span class="offer-more">+ 2 more</span></div>
+                                <div class="offer-tag secondary">Up to 10% off with bank offers</div>
+                            </div>
+                            <div class="rc-footer-offer">Get extra ₹50 off using PAYTMUPI</div>
+                        </div>
+                    </article>
+                    
+                    <!-- Restaurant Card 5 -->
+                    <article class="restaurant-card">
+                        <div class="rc-image-wrapper">
+                            <img src="assets/images/73a47bc4-c684-447f-9908-22da3ecd3ba2_c9948a61-3dca-4e29-82b4-31178d38746b.png" alt="Royal Punjab Restaurant" class="rc-img">
+                            <div class="rc-overlay">
+                                <h3 class="rc-title">Royal Punjab Restaurant</h3>
+                                <div class="rc-rating"><span class="star">★</span> 3.8</div>
+                            </div>
+                        </div>
+                        <div class="rc-details">
+                            <div class="rc-row">
+                                <span class="rc-cuisine">North Indian • Chinese</span>
+                                <span class="rc-price">₹700 for two</span>
+                            </div>
+                            <div class="rc-row">
+                                <span class="rc-location">Nerul, Mumbai</span>
+                                <span class="rc-distance">4 km</span>
+                            </div>
+                            <div class="rc-offers">
+                                <div class="offer-tag secondary">Up to 10% off with bank offers</div>
+                            </div>
+                            <div class="rc-footer-offer">Get extra ₹50 off using PAYTMUPI</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Download Banner -->
+        <section class="container mt-large">
+            <div class="app-banner">
+                <div class="banner-content">
+                    <img src="assets/icons/swiggy-logo-orange.svg" alt="Swiggy" class="banner-logo">
+                    <h2 class="banner-title">Get the Swiggy App now!</h2>
+                    <p class="banner-subtitle">For best offers and discounts curated specially for you.</p>
+                </div>
+                <div class="banner-image">
+                    <img src="assets/images/App_download_banner.png" alt="Download Swiggy App" class="mockup-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Cities Grid -->
+        <section class="container mt-large cities-section">
+            <h2 class="section-title">Cities with food delivery</h2>
+            <div class="cities-grid">
+                <a href="#" class="city-btn">Order food online in Bangalore</a>
+                <a href="#" class="city-btn">Order food online in Gurgaon</a>
+                <a href="#" class="city-btn">Order food online in Hyderabad</a>
+                <a href="#" class="city-btn">Order food online in Delhi</a>
+                <a href="#" class="city-btn">Order food online in Mumbai</a>
+                <a href="#" class="city-btn">Order food online in Pune</a>
+                <a href="#" class="city-btn">Order food online in Kolkata</a>
+                <a href="#" class="city-btn">Order food online in Chennai</a>
+                <a href="#" class="city-btn">Order food online in Ahmedabad</a>
+                <a href="#" class="city-btn">Order food online in Chandigarh</a>
+                <a href="#" class="city-btn">Order food online in Jaipur</a>
+                <button class="city-btn show-more" data-target="food-cities-extra">Show More <span class="arrow-down">∨</span></button>
+            </div>
+            <div class="cities-grid extra-cities hidden" id="food-cities-extra">
+                <a href="#" class="city-btn">Order food online in Lucknow</a>
+                <a href="#" class="city-btn">Order food online in Kochi</a>
+                <a href="#" class="city-btn">Order food online in Indore</a>
+                <a href="#" class="city-btn">Order food online in Nagpur</a>
+            </div>
+
+            <h2 class="section-title mt-medium">Cities with grocery delivery</h2>
+            <div class="cities-grid">
+                <a href="#" class="city-btn">Order grocery delivery in Bangalore</a>
+                <a href="#" class="city-btn">Order grocery delivery in Gurgaon</a>
+                <a href="#" class="city-btn">Order grocery delivery in Hyderabad</a>
+                <a href="#" class="city-btn">Order grocery delivery in Delhi</a>
+                <a href="#" class="city-btn">Order grocery delivery in Mumbai</a>
+                <a href="#" class="city-btn">Order grocery delivery in Pune</a>
+                <a href="#" class="city-btn">Order grocery delivery in Kolkata</a>
+                <a href="#" class="city-btn">Order grocery delivery in Chennai</a>
+                <a href="#" class="city-btn">Order grocery delivery in Ahmedabad</a>
+                <a href="#" class="city-btn">Order grocery delivery in Chandigarh</a>
+                <a href="#" class="city-btn">Order grocery delivery in Jaipur</a>
+                <button class="city-btn show-more" data-target="grocery-cities-extra">Show More <span class="arrow-down">∨</span></button>
+            </div>
+            <div class="cities-grid extra-cities hidden" id="grocery-cities-extra">
+                <a href="#" class="city-btn">Order grocery delivery in Lucknow</a>
+                <a href="#" class="city-btn">Order grocery delivery in Kochi</a>
+                <a href="#" class="city-btn">Order grocery delivery in Indore</a>
+                <a href="#" class="city-btn">Order grocery delivery in Nagpur</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer mt-large">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo" aria-label="Swiggy Home">
+                    <img src="assets/images/swiggy_logo_white.png" alt="Swiggy">
+                </a>
+                <p class="copyright">© 2026 Swiggy Limited</p>
+            </div>
+            
+            <div class="link-column">
+                <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Swiggy Corporate</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Swiggy One</a></li>
+                        <li><a href="#">Swiggy Instamart</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-column">
+                    <h4>Contact us</h4>
+                    <ul>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                        <li><a href="#">Ride With Us</a></li>
+                    </ul>
+                    
+                    <h4 class="mt-small">Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-column">
+                    <h4>Available in:</h4>
+                    <ul>
+                        <li><a href="#">Bangalore</a></li>
+                        <li><a href="#">Gurgaon</a></li>
+                        <li><a href="#">Hyderabad</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Pune</a></li>
+                    </ul>
+                    <div class="city-select mt-small">
+                        <select aria-label="Select City">
+                            <option>685 cities</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="link-column">
+                    <h4>Life at Swiggy</h4>
+                    <ul>
+                        <li><a href="#">Explore With Swiggy</a></li>
+                        <li><a href="#">Swiggy News</a></li>
+                        <li><a href="#">Snackables</a></li>
+                    </ul>
+
+                    <h4 class="mt-small">Social Links</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+                        <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>
+                        <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt=""></a>
+                        <a href="#" aria-label="Pinterest"><img src="assets/icons/pinterest.svg" alt=""></a>
+                        <a href="#" aria-label="Twitter"><img src="assets/icons/twitter.svg" alt=""></a>
+                    </div>
+                </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <h3 class="download-text">For better experience, download the Swiggy app now</h3>
+            <div class="app-buttons">
+                <a href="#" aria-label="Download on App Store"><img src="assets/images/app_store.png" alt="App Store"></a>
+                <a href="#" aria-label="Get it on Google Play"><img src="assets/images/play_store.png" alt="Google Play"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
