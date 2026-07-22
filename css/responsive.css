@@ -1,19 +1,15 @@
-/* ==========================================================================
-   Responsive Styles
-   ========================================================================== */
 
-/* 1280px */
+
 @media (max-width: 1280px) {
     .container {
         padding: 0 40px;
     }
-    
+
     .hero-title {
         font-size: 42px;
     }
 }
 
-/* 1024px */
 @media (max-width: 1024px) {
     .service-cards {
         flex-direction: column;
@@ -43,24 +39,23 @@
     .cities-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .footer-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .footer-brand {
         grid-column: span 3;
     }
 }
 
-/* 768px (Tablet) */
 @media (max-width: 768px) {
     .container {
         padding: 0 20px;
     }
 
     .nav-links {
-        display: none; /* Hide standard nav on tablet/mobile */
+        display: none; 
     }
 
     .mobile-menu-btn {
@@ -77,7 +72,7 @@
     }
 
     .hero-img {
-        display: none; /* Hide background hero images on smaller screens */
+        display: none; 
     }
 
     .search-container {
@@ -98,7 +93,7 @@
         text-align: center;
         padding: 40px 20px 0;
     }
-    
+
     .banner-title {
         font-size: 32px;
     }
@@ -111,13 +106,12 @@
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .footer-brand {
         grid-column: span 2;
     }
 }
 
-/* 480px (Mobile) */
 @media (max-width: 480px) {
     .hero-title {
         font-size: 28px;
@@ -153,20 +147,19 @@
     }
 }
 
-/* 360px (Small Mobile) */
 @media (max-width: 360px) {
     .hero-title {
         font-size: 24px;
     }
 
     .service-card-img {
-        display: none; /* Hide image if it gets too tight */
+        display: none; 
     }
-    
+
     .service-card {
         justify-content: center;
     }
-    
+
     .arrow-circle {
         position: relative;
         bottom: 0;
