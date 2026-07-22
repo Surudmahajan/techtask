@@ -4,7 +4,7 @@ const path = require('path');
 const iconsDir = path.join(__dirname, 'assets', 'icons');
 const imagesDir = path.join(__dirname, 'assets', 'images');
 
-// Ensure directories exist
+
 [iconsDir, imagesDir].forEach(dir => {
     if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
